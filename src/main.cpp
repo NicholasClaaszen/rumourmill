@@ -54,6 +54,10 @@ struct Rumor {
 
 static std::vector<Rumor> rumors;
 
+static void logLine(const char *message) {
+  Serial.println(message);
+}
+
 static bool lockRumors(uint32_t timeoutMs) {
   return xSemaphoreTake(rumorsMutex, pdMS_TO_TICKS(timeoutMs)) == pdTRUE;
 }
@@ -98,20 +102,28 @@ static bool saveRumorsLocked() {
 
 static bool loadRumors() {
   if (!LittleFS.begin(true)) {
+    logLine("[rumor] LittleFS begin failed");
     return false;
   }
   if (!LittleFS.exists(kRumorsPath)) {
     if (!lockRumors(200)) {
+      logLine("[rumor] mutex busy on init");
       return false;
     }
     rumors.clear();
     bool ok = saveRumorsLocked();
     unlockRumors();
+    if (ok) {
+      logLine("[rumor] created empty rumors store");
+    } else {
+      logLine("[rumor] failed to create empty rumors store");
+    }
     return ok;
   }
 
   File file = LittleFS.open(kRumorsPath, "r");
   if (!file) {
+    logLine("[rumor] failed to open rumors file");
     return false;
   }
 
@@ -120,10 +132,12 @@ static bool loadRumors() {
   DeserializationError err = deserializeJson(doc, file);
   file.close();
   if (err) {
+    Serial.printf("[rumor] JSON parse failed: %s\n", err.c_str());
     return false;
   }
 
   if (!lockRumors(200)) {
+    logLine("[rumor] mutex busy while loading");
     return false;
   }
   rumors.clear();
@@ -141,6 +155,7 @@ static bool loadRumors() {
     rumors.push_back(rumor);
   }
   unlockRumors();
+  Serial.printf("[rumor] loaded %u rumors\n", static_cast<unsigned>(rumors.size()));
 
   return true;
 }
@@ -465,16 +480,10 @@ static void printRumor(const Rumor &rumor) {
   printer.boldOn();
   printer.feed(2);
   delay(10);
-  printer.println(rumor.title);
-  delay(10);
   printer.println(rumor.textNl);
   delay(10);
   printer.println(rumor.textEn);
   delay(10);
-  if (rumor.people.length() > 0) {
-    printer.println(rumor.people);
-    delay(10);
-  }
   printer.feed(10);
   delay(10);
   printer.sleep();
@@ -514,10 +523,13 @@ static void printTask(void *parameter) {
   uint8_t signal = 0;
   for (;;) {
     if (xQueueReceive(printQueue, &signal, portMAX_DELAY) == pdTRUE) {
+      Serial.println("[print] trigger received");
       Rumor selected;
       if (pickRandomRumor(selected)) {
+        Serial.printf("[print] printing rumor id=%u title=%s\n", selected.id, selected.title.c_str());
         printRumor(selected);
       } else {
+        logLine("[print] no eligible rumors");
         printer.boldOn();
         printer.feed(2);
         delay(10);
@@ -545,6 +557,7 @@ static void reedTask(void *parameter) {
       uint8_t signal = 1;
       xQueueSend(printQueue, &signal, 0);
       lastTrigger = now;
+      Serial.println("[reed] trigger queued");
     }
     lastState = state;
     vTaskDelay(pdMS_TO_TICKS(kReedPollMs));
@@ -555,12 +568,15 @@ void setup() {
   pinMode(kLedPin, OUTPUT);
   pinMode(kReedPin, INPUT_PULLUP);
   Serial.begin(115200);
+  logLine("[setup] booting");
 
   Serial1.begin(9600, SERIAL_8N1, 16, 17);
   printer.setTimes(200, 200);
+  logLine("[setup] serial1/printer ready");
 
   rumorsMutex = xSemaphoreCreateMutex();
   printQueue = xQueueCreate(4, sizeof(uint8_t));
+  logLine("[setup] RTOS primitives ready");
 
   if (!loadRumors()) {
     Serial.println("Failed to load rumors.");
@@ -568,15 +584,20 @@ void setup() {
 
   WiFi.mode(WIFI_AP);
   WiFi.softAP(kApSsid, kApPassword);
+  Serial.printf("[wifi] AP up: %s\n", kApSsid);
+  Serial.printf("[wifi] AP IP: %s\n", WiFi.softAPIP().toString().c_str());
 
   setupRoutes();
   server.begin();
+  logLine("[web] server started");
 
   digitalWrite(kLedPin, HIGH);
+  logLine("[setup] LED on, printing startup slip");
   printStart();
 
   xTaskCreatePinnedToCore(reedTask, "reedTask", 4096, nullptr, 1, nullptr, 1);
   xTaskCreatePinnedToCore(printTask, "printTask", 6144, nullptr, 1, nullptr, 1);
+  logLine("[setup] tasks started");
 }
 
 void loop() {

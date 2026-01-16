@@ -1,31 +1,281 @@
 [
   {
     "id": 1,
-    "title": "Windmill Whispers",
-    "text_nl": "De windmolen draait sneller dan de roddels.",
-    "text_en": "The windmill spins faster than the gossip.",
-    "people": "Ada, Beau",
+    "title": "Newlyweds",
+    "text_nl": "Twee juniors zijn in het huwelijksbootje gestapt, Joachim Drijver en Catharina van Styrum. De bruid had wel een erg wijdvallende jurk aan, maar wat zag ze er mooi uit. Hoe zullen de eerste schreden op het pad van volwassenheid zijn voor deze twee?",
+    "text_en": "Two juniors got married, Joachim Drijver and Catharina Drijver-van Styrum. The bride had a rather flowy dress on, but she looked lovely. How will their first steps on the path of marriage turn out?",
+    "people": "Joachim Drijver (Renout), Catharina Drijver-van Styrum (Larissa)",
     "active": true,
     "max_prints": 5,
     "printed_count": 0
   },
   {
     "id": 2,
-    "title": "Pocket of Secrets",
-    "text_nl": "Er zitten meer geheimen in deze zak dan in de stad.",
-    "text_en": "There are more secrets in this pocket than in the town.",
-    "people": "Carla, Dirk",
+    "title": "Newlyweds part 2",
+    "text_nl": "Antonius II van Oudewater is, met zijn hoge leeftijd, in het huwelijksbootje getreden met de veel jongere Isabelle Voland. Zij heeft na het huwelijk haar achternaam Orangistisch gemaakt en gaat nu als van Oudewater-Drijver door het leven.",
+    "text_en": "Antonius II van Oudewater has, as his old age, married the much younger Isabelle Voland. After marriage she changed her last name to the Orangist version and now goes through life as van Oudewater-Drijver",
+    "people": "Antonius II van Oudewater (Sean), Isabelle van Oudewater-Drijver (Freija)",
     "active": true,
     "max_prints": 5,
     "printed_count": 0
   },
   {
     "id": 3,
-    "title": "Quiet Corner",
-    "text_nl": "In de stille hoek worden de luidste verhalen gefluisterd.",
-    "text_en": "In the quiet corner, the loudest stories get whispered.",
-    "people": "Elle, Finn, Gita",
-    "active": false,
+    "title": "Black widow",
+    "text_nl": "Julia Voland, de tante van Isabelle van Oudewater-Drijver, is voorheen meerdere malen weduwe geweest, gaat haar nichtje haar achterna door te trouwen met een veel oudere man?",
+    "text_en": "Julia Voland, the aunt of Isabelle van Oudewater-Drijver, has been a widow multiple times. Is her niece following in her footsteps by marrying a much older man?",
+    "people": "Julia Voland (Ylva), Isabelle van Oudewater-Drijver (Freija)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 4,
+    "title": "Semafoor",
+    "text_nl": "Het schijnt dat minstens twee bewoners van Paveijen een brief hebben ontvangen over de Semafoor. Is er dan toch al een beslissing gemaakt over waar het ding komt te staan?",
+    "text_en": "It seems that at least two inhabitants of Paveijen have received a letter about the Semafoor. Has a decision been made about where it will be built?",
+    "people": "Thérèse Petra Catharina van Brants (Sieta), Leonore van Nimwegen-van Styrum (Lucia)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 5,
+    "title": "Aanzoek zonder ringen",
+    "text_nl": "Daniel Ashgrove heeft een aanzoek gedaan aan Mechteld Boyd-Seaver, maar heeft hij het wel met zijn familie overlegd? Of met die van haar?",
+    "text_en": "Daniel Ashgrove has proposed to Mechteld Boyd-Seaver, but did he talk this through with his family? Or hers?",
+    "people": "Daniel Ashgrove (Yvon), Mechteld Boyd-Seaver (Eva)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 6,
+    "title": "Social status",
+    "text_nl": "Gabriel du Styrum heeft na de dood van zijn vader het familiebedrijf overgenomen. Alleen vanwege zijn jonge leeftijd wordt hij niet voor vol aangezien. Zou hij misschien willen trouwen om zijn sociale status te verbeteren?",
+    "text_en": "Gabriel du Styrum took over his family company after the death of his father. Sadly, he is not taken quite seriously because of his young age. Perhaps a marriage could improve his social standing?",
+    "people": "Gabriel du Styrum (Tális)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 7,
+    "title": "NOAD ADVENDO Paveijen",
+    "text_nl": "Sportclub NOAD ADVENDO Paveijen wordt steeds populairder bij jonge dames. Komen ze enkel voor hun gezondheid, of toch om te gluren naar ongehuwde mannen?",
+    "text_en": "Sporting club NOAD ADVENDO Paveijen is gaining popularity among the young ladies. Are they merely there for their health, or are they secretly staring at the unmarried men?",
+    "people": "",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 8,
+    "title": "Honest price",
+    "text_nl": "De overheid beweert dat er een eerlijke prijs betaald gaat worden voor het stuk land waar de semafoor op gebouwd gaat worden. Maar wie bepaalt de eerlijkheid van die prijs?",
+    "text_en": "The government states that they will pay an honest price for the piece of land that they want to build the semaphore tower on. But who determines what an honest price actually means?",
+    "people": "",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 9,
+    "title": "Ready to get hitched",
+    "text_nl": "Het lijkt erop dat Emilie Duchamps steeds meer interesse toont in trouwen. Zoals het hoort bij een jongedame natuurlijk. Zou zij de volgende bruid kunnen zijn, en heeft ze al een bruidegom op het oog?",
+    "text_en": "It seems Emilie Duchamps has taken an interest in the marriage state. Very proper for a young lady of course. Could she be the next bride, and has she fixed on a groom yet?",
+    "people": "Emilie Duchamps (Mariska)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 10,
+    "title": "Tensions",
+    "text_nl": "Isolde van Oudewater en Joachim Drijver zijn enkele malen gezien terwijl zij een verhitte discussie voerden. Waar zou dat nu over gaan?",
+    "text_en": "Isolde van Oudewater and Joachim Drijver have been seen in heated debate at multiple occasions. What do you suppose is going on between them?",
+    "people": "Isolde van Oudewater (Lies), Joachim Drijver (Renout)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 11,
+    "title": "toekomstplannen",
+    "text_nl": "Antonius II van Oudewater is regelmatig bij Gerbrand Vote, zijn advocaat en notaris langs geweest, misschien is hij een fusie van de Oudewater-Boyd-Seaver en Voland familiebedrijven aan het voorbereiden?",
+    "text_en": "Antonius II van Oudewater has often visited Gerbrand Vote, his lawyer and notary. Perhaps he is planning a merger of Oudewater-Boyd-Seaver and Voland family businesses?",
+    "people": "Antonius II van Oudewater",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 12,
+    "title": "Poor friend, rich friend",
+    "text_nl": "Emilie Duchamps en Frederica Mayweather lijken sinds kort goede vriendinnen. Maar, is Emilie niet te arm voor de dure smaak van Frederica?",
+    "text_en": "Emilie Duchamps and Frederica Mayweather seems to have become great friends. But, isn't Emilie a bit too poor for the expensive taste of Frederica?",
+    "people": "Emilie Duchamps (Mariska), Frederica Mayweather (Cleo)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 13,
+    "title": "Protest",
+    "text_nl": "Margreet Thornhold lijkt heel erg tegen de komst van de semafoor te zijn.",
+    "text_en": "It is said that Margreet Thornhold is very opposed to the semafoor",
+    "people": "Margreet Thornhold (Tina)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 14,
+    "title": "Trying to better himself",
+    "text_nl": "Christoph Voland is druk bezig geweest om zijn reputatie te verbeteren. Het is fijn dat deze jongeman wat serieuzer is over zijn plaats in de gegoede burgerij.",
+    "text_en": "Christoph Voland has been trying very hard to fix his reputation. It is nice to see the young man being more serious about his place in good society.",
+    "people": "Christoph Voland (Jorien)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 15,
+    "title": "Picknick",
+    "text_nl": "Schijnbaar heeft Daniel Ashgrove de picknickmand in handen gekregen die door Mechteld Boyd-Seaver was ingebracht bij de veiling. Maar.... De picknickmand is nog niet gebruikt. Omdat Daniel het perfecte moment en de perfecte plek aan het zoeken is? Of zou het zijn omdat Mechteld eigenlijk niet wil? ... Of niet (meer) mag van haar familie?",
+    "text_en": "It seems that Daniel Ashgrove got his hands on the picknick basket that was brought into the auction by Mechteld Boyd-Seaver. However... the picknick basket has not been used yet. Is this because Daniel is looking for the perfect place and time? Or does Mechteld no longer want to go? Or is she no longer allowed by her family?",
+    "people": "Daniel Ashgrove (Yvon), Mechteld Boyd-Seaver (Eva)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 16,
+    "title": "Linnengoed of fout?",
+    "text_nl": "Het linnengoed dat bij de uitzet van Catharina Drijver-van Styrum zat, leek verdacht veel op het schitterende linnengoed uit de uitzet die op de veiling werd aangeboden door Isolde van Oudewater. Toch had Catharina dit kavel niet gewonnen. Noch haar man...",
+    "text_en": "The linen that was part of the dowry of Catharina Drijver-van Styrum, looked a lot like the beautiful linen that was offered at the auction by Isolde van Oudewater. However, Catharine did not win that lot and neither did her husband...",
+    "people": "Joachim Drijver (Renout), Catharina Drijver-van Styrum (Larissa), Isolde van Oudewater (Lies)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 17,
+    "title": "New face, old family",
+    "text_nl": "Recent is Thérèse Petra Catharina van Brants aangekomen in Paveijen. Hoewel zij jarenlang in Rusland gewoond heeft, had haar familie hier een huis en landerijen. Wat komt deze rijke dame hier doen? Als ze van plan is te blijven dan kan ze een goede buurvrouw en connectie zijn.",
+    "text_en": "Recently Thérèse Petra Catharina van Brants has arrived in Paveijen. Although she has lived in Russia for years, her family had a house and lands in the neighbourhood. What is this rich lady doing here? If she plans to stay she could be a good neighbour and connection.",
+    "people": "Thérèse Petra Catharina van Brants (Sieta)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 18,
+    "title": "Change of heart",
+    "text_nl": "Samuel Bontemps heeft vroeger het Mercantiele gedachtengoed van zijn familie, de Mayweathers, aangehangen. Wat heeft hem overtuigd van het Patriotische denkbeeld?",
+    "text_en": "Samuel Bontemps used to be a supporter of the Mercantile ideology of his family, the Mayweathers. What convinced him of the Patriotic cause?",
+    "people": "Samuel Bontemps (Benito)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 19,
+    "title": "Wilde haren",
+    "text_nl": "Zowel Florian Duchamps als Alida Duchamps (née Gilbert) zijn altijd wilde kinderen geweest, tot ze met elkaar getrouwd zijn. Hebben ze elkaar getemd?",
+    "text_en": "Both Florian Duchamps and Alida Duchamps (née Gilbert) have always been wild children, until they married each other. Did they tame each other?",
+    "people": "Florian Duchamps (Chiel), Alida Duchamps (Ester)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 20,
+    "title": "Schoonfamilie",
+    "text_nl": "Men zegt dat Pieter Gilbert zijn schoonzoon Florian Duchamps niet mag. En dat dit geheel wederzijds is.",
+    "text_en": "It is said that Pieter Gilbert does not like his son-in-law Florian Duchamps. And the feeling is mutual.",
+    "people": "Florian Duchamps (Chiel), Pieter Gilbert (Tim)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 21,
+    "title": "Reasons for marriage",
+    "text_nl": "Nicolette van den Elzen en Valentijn van Nimwegen zijn verloofd en gaan binnenkort trouwen. Maar haar fortuin is wel vele malen groter dan dat van hem. Is dit een huwelijk uit liefde of om de bruidschat?",
+    "text_en": "Nicolette van den Elzen and Valentijn van Nimwegen are engaged and hope to be married soon. However, her fortune is a lot bigger than his. Is this a marriage for love, or for the dowry?",
+    "people": "Nicolette van den Elzen (Yleine), Valentijn van Nimwegen (Buddy)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 22,
+    "title": "Red mijn erfenis",
+    "text_nl": "Valentijn van Nimwegen is op bezoek in Paveijen, waar zijn oudoom Antonius II van Oudewater woont. Heeft het bezoek misschien te maken met het recente huwelijk van zijn oudoom? Probeert hij nog even in een goed blaadje te komen bij deze kant van de familie?",
+    "text_en": "Valentijn van Nimwegen is visiting Paveijen, where his great uncle Antonius II van Oudewater lives. Is the visit possibly related to the recent marriage of this great uncle? Is he trying to get into the good graces of this side of the family?",
+    "people": "Valentijn van Nimwegen (Buddy), Antonius II van Oudewater (Sean)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 23,
+    "title": "So I stay or do I go?",
+    "text_nl": "Isaac Peter Drijver is een zeevarend kapitein. Is hij tijdelijk terug in Paveijen, of zou hij van plan zijn om te blijven?",
+    "text_en": "Isaac Peter Drijver is a seafaring captain. Is his return to Paveijen temporary, or is he here to stay?",
+    "people": "Isaac Peter Drijver (Famke)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 24,
+    "title": "Showing interest",
+    "text_nl": "Sandrine de Billancourt heeft interesse in de familie Voland, maar het is niet duidelijk waarom.",
+    "text_en": "Sandrine de Billancourt has taken an interest in the Voland family, but it is not clear why.",
+    "people": "Sandrine de Billancourt (Jeanine)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 25,
+    "title": "Arts teacher",
+    "text_nl": "Sandrine de Billancourt is een docente in de schone kunsten. Wat een aanwinst voor de vrijgezelle jongedames van Paveijen, die met haar lessen hun goede kwaliteiten kunnen verhogen.",
+    "text_en": "Sandrine de Billancourt is a teacher of the fine arts. What an asset for the young unmarried ladies of Paveijen, who can improve their good qualities with her lessons.",
+    "people": "Sandrine de Billancourt (Jeanine)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 26,
+    "title": "no chaperone?",
+    "text_nl": "Zou het echt zo zijn dat Emilie Duchamps en Christoph Voland samen in de tuin zijn gezien, zonder chaperone?",
+    "text_en": "Do you suppose it's true that Emilie Duchamps and Christoph Voland were spotted in the garden together, without a chaperone?",
+    "people": "Christoph Voland (Jorien), Emilie Duchamps (Mariska)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 27,
+    "title": "Scar",
+    "text_nl": "Hoe is Florian de Lange aan dat litteken gekomen?",
+    "text_en": "How did Florian de Lange get that scar?",
+    "people": "Florian de Lange (Cheyenne)",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 28,
+    "title": "Liters koffie",
+    "text_nl": "Gaat alles goed met Adrianus van Nimwegen? De beste jongen begraaft zich in zijn werk en drinkt schijnbaar liters koffie, hij heeft misschien gewoon een vrouw nodig in zijn leven?",
+    "text_en": "Is Adrianus van Nimwegen quite well? The dear boy buries himself in his work and consumes large quantities of coffee. Does he need a woman to take care of him?",
+    "people": "Adrianus van Nimwegen (Theo)",
+    "active": true,
     "max_prints": 5,
     "printed_count": 0
   }
