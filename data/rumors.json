@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Windmill Whispers",
+    "text_nl": "De windmolen draait sneller dan de roddels.",
+    "text_en": "The windmill spins faster than the gossip.",
+    "people": "Ada, Beau",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 2,
+    "title": "Pocket of Secrets",
+    "text_nl": "Er zitten meer geheimen in deze zak dan in de stad.",
+    "text_en": "There are more secrets in this pocket than in the town.",
+    "people": "Carla, Dirk",
+    "active": true,
+    "max_prints": 5,
+    "printed_count": 0
+  },
+  {
+    "id": 3,
+    "title": "Quiet Corner",
+    "text_nl": "In de stille hoek worden de luidste verhalen gefluisterd.",
+    "text_en": "In the quiet corner, the loudest stories get whispered.",
+    "people": "Elle, Finn, Gita",
+    "active": false,
+    "max_prints": 5,
+    "printed_count": 0
+  }
+]

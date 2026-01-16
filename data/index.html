@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rumour Mill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <header class="hero">
+      <div class="hero-text">
+        <p class="hero-kicker">Rumour Mill</p>
+        <h1>Make the mill whisper.</h1>
+        <p class="hero-sub">
+          Manage rumors, toggle activity, and reset counts. Spin the mill to print a random rumor.
+        </p>
+      </div>
+      <div class="hero-status" id="statusBlock">
+        <div class="status-label">Rumors</div>
+        <div class="status-value" id="rumorCount">0</div>
+        <div class="status-sub">active and ready</div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel list-panel">
+        <div class="panel-header">
+          <h2>Rumor Library</h2>
+          <button class="ghost" id="resetAllBtn" type="button">Reset All Counts</button>
+        </div>
+        <div class="filter-row">
+          <label for="nameFilter">Filter by name</label>
+          <input id="nameFilter" type="text" placeholder="e.g. Alice" autocomplete="off" />
+        </div>
+        <div id="rumorList" class="rumor-list"></div>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2 id="formTitle">Add a Rumor</h2>
+          <button class="ghost" id="cancelEditBtn" type="button" hidden>Cancel</button>
+        </div>
+        <form id="rumorForm" class="rumor-form">
+          <label>
+            Title
+            <input id="titleInput" type="text" required />
+          </label>
+          <label>
+            Dutch text
+            <textarea id="textNlInput" rows="3" required></textarea>
+          </label>
+          <label>
+            English text
+            <textarea id="textEnInput" rows="3" required></textarea>
+          </label>
+          <label>
+            People (comma separated)
+            <input id="peopleInput" type="text" placeholder="Ada, Beau, Carla" />
+          </label>
+          <div class="form-row">
+            <label>
+              Max prints
+              <input id="maxPrintsInput" type="number" min="1" value="5" />
+            </label>
+            <label class="toggle">
+              <input id="activeInput" type="checkbox" checked />
+              <span>Active</span>
+            </label>
+          </div>
+          <button class="primary" type="submit">Save Rumor</button>
+        </form>
+        <div class="hint">
+          Tip: Use the filter to quickly find rumors connected to a person.
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

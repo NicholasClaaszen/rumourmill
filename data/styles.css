@@ -1,0 +1,312 @@
+:root {
+  --ink: #1b1a17;
+  --ink-muted: #3f3b32;
+  --paper: #f7f2e8;
+  --accent: #c5482b;
+  --accent-soft: #e9c7a3;
+  --panel: rgba(255, 255, 255, 0.86);
+  --shadow: rgba(27, 26, 23, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 15% 15%, #f7d8b9 0%, #f7f2e8 35%, #e9e4da 100%);
+  color: var(--ink);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-orb {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  filter: blur(0px);
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.orb-a {
+  top: -60px;
+  right: -60px;
+  background: radial-gradient(circle, #c5482b 0%, rgba(197, 72, 43, 0) 70%);
+}
+
+.orb-b {
+  bottom: -80px;
+  left: -60px;
+  background: radial-gradient(circle, #2e6f6d 0%, rgba(46, 111, 109, 0) 70%);
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 40px 6vw 20px;
+  animation: rise 0.7s ease-out both;
+}
+
+.hero h1 {
+  margin: 8px 0 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: clamp(2.1rem, 3vw, 3.2rem);
+}
+
+.hero-kicker {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.hero-sub {
+  max-width: 480px;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.hero-status {
+  background: var(--panel);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 20px 40px var(--shadow);
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 6px;
+}
+
+.status-label {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+
+.status-value {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.status-sub {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+.layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 24px;
+  padding: 10px 6vw 40px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 18px 45px var(--shadow);
+  backdrop-filter: blur(6px);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid var(--ink-muted);
+  color: var(--ink);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.ghost:hover {
+  background: rgba(27, 26, 23, 0.06);
+}
+
+.filter-row {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.filter-row input {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(27, 26, 23, 0.2);
+  background: white;
+}
+
+.rumor-list {
+  display: grid;
+  gap: 14px;
+}
+
+.rumor-card {
+  border-radius: 16px;
+  border: 1px solid rgba(27, 26, 23, 0.12);
+  padding: 14px 16px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(27, 26, 23, 0.08);
+  display: grid;
+  gap: 10px;
+  animation: fadeIn 0.4s ease-out both;
+}
+
+.rumor-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rumor-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+}
+
+.pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pill.active {
+  background: rgba(46, 111, 109, 0.15);
+  color: #2e6f6d;
+}
+
+.pill.inactive {
+  background: rgba(197, 72, 43, 0.12);
+  color: #c5482b;
+}
+
+.rumor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.rumor-actions button {
+  border: none;
+  background: rgba(27, 26, 23, 0.08);
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.rumor-actions button:hover {
+  background: rgba(27, 26, 23, 0.16);
+}
+
+.rumor-form {
+  display: grid;
+  gap: 14px;
+}
+
+.rumor-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.rumor-form input,
+.rumor-form textarea {
+  border-radius: 12px;
+  border: 1px solid rgba(27, 26, 23, 0.2);
+  padding: 10px 12px;
+  font: inherit;
+  background: white;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.primary {
+  border: none;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  padding: 12px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 12px 20px rgba(197, 72, 43, 0.2);
+}
+
+.primary:hover {
+  filter: brightness(1.05);
+}
+
+.hint {
+  margin-top: 14px;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
